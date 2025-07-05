@@ -102,3 +102,161 @@ Focus on top-rated but under-reviewed products to increase awareness.
 Use discount strategy smartly to drive engagement without undervaluing product categories.
 
 Encourage verified reviews to boost product credibility.
+
+
+
+
+
+
+📘 
+### **Documentation: Palmora Group HR Analysis Case Study** ###
+👤 **Role**
+HR Analytics Expert
+Hired by CHRO of Palmora Group to uncover insights around gender inequality, pay gaps, and regulatory compliance.
+
+🎯 **Objective**
+Analyze HR data to:
+
+Explore gender distribution, pay gap, and regional patterns
+
+Clean and transform the data to remove null values and exited staff
+
+Assign bonuses based on performance ratings
+
+Deliver interactive visual insights using Power BI
+
+📁 **Data Cleaning & Preparation**
+🧹 Data Cleaning Steps (in Excel or Power BI Power Query Editor)
+Task	Action
+1. Handle Missing Genders	Replace null/blank gender values with "Undisclosed"
+2. Remove Exited Employees	Filter out rows with null or 0 salary
+3. Remove Null Departments	Filter out rows where Department = NULL or is blank
+4. Bonus Rules	Merge bonus rules dataset with main HR dataset using performance rating
+5. Add Computed Fields	- Bonus Amount = Salary × Bonus %
+- Total Compensation = Salary + Bonus
+- Salary Band (bin) using Power BI binning
+
+📊 **Analysis Areas & Power BI Visualizations**
+1️⃣ Gender Distribution
+Visuals: Donut Chart, Stacked Column Chart
+
+Breakdowns:
+
+Overall Gender Split
+
+Gender Distribution by Region
+
+Gender Distribution by Department
+
+2️⃣ Performance Ratings by Gender
+Visuals: Clustered Column Chart or Box Plot
+
+Breakdowns:
+
+Average Performance Rating by Gender
+
+Rating Distribution by Gender
+
+3️⃣ Salary Structure & Gender Pay Gap
+Visuals:
+
+Line Chart (Average Salary by Gender)
+
+Matrix/Table (Avg Salary by Gender & Department)
+
+Decomposition Tree (Drill down Pay Gap by Region > Dept)
+
+💡 Insights to Derive:
+Compare male vs female average salary in:
+
+Overall organization
+
+Each region
+
+Each department
+
+4️⃣ Minimum Wage Compliance
+Visuals:
+
+Column Chart (Employees by Salary Band)
+
+KPI Card for % Employees < $90,000
+
+Regional Bar Chart (Compliance rate per region)
+
+💡 Insights to Derive:
+Number of employees earning below $90,000
+
+Region(s) with the most non-compliant salaries
+
+5️⃣ Bonus Allocation Analysis
+Steps:
+
+Join performance rating data with bonus rules
+
+Compute:
+
+Bonus Amount = Salary × Bonus %
+
+Total Compensation = Salary + Bonus
+
+Aggregate:
+
+Total Bonus per Region
+
+Total Company-wide Bonus Allocation
+
+Visuals:
+
+Stacked Column Chart (Total Payout by Region)
+
+Card Visual (Total Bonus Cost)
+
+Matrix/Table of Individual Bonuses
+
+🖼️ **Power BI Report Page Layout**
+📄 Page 1: Executive Summary
+KPI Cards:
+
+Avg Gender Pay Gap
+
+Compliance with $90k Policy
+
+Total Bonus Budget
+
+Donut: Gender Split
+
+Bar: Employees by Region
+
+📄 Page 2: Gender Pay & Ratings
+Matrix: Avg Salary by Gender, Dept, Region
+
+Bar: Rating by Gender
+
+📄 Page 3: Salary Band Analysis
+
+Clustered Bar: Salary Band by Region
+
+KPI: Employees < $90k
+
+📄 Page 4: Bonus Analysis
+Table: Bonus per Employee
+
+Column: Total Bonus by Region
+
+KPI: Total Compensation Cost
+
+🧠 **Recommendations Based on Insights**
+Implement a salary review in regions/departments with large gender pay gaps.
+
+Increase transparency in performance rating criteria to eliminate unconscious bias.
+
+Ensure all salaries comply with the $90k minimum wage regulation.
+
+Create an annual budget cap for bonuses to manage expenses effectively.
+
+📎 **Deliverables**
+Power BI .pbix report file
+
+Documentation of assumptions, transformations, and KPIs 
+
